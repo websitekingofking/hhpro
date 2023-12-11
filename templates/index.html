@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>프탈레이트</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="../static/favicon.ico" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="../static/styles.css" rel="stylesheet" />
+    </head>
+    <body>
+        <!-- Responsive navbar-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="#!">환경호르몬 위험성 연구 위원회</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Blog</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Page content-->
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-lg-8">
+                    <!-- Post content-->
+                    <article>
+                        <!-- Post header-->
+                        <header class="mb-4">
+                            <!-- Post title-->
+                            <h1 class="fw-bolder mb-1">프탈레이트계 가소제의 위험성</h1>
+                            <!-- Post meta content-->
+                            <div class="text-muted fst-italic mb-2">2023.11.10 by 석병관, 이유승, 조현준</div>
+                            <!-- Post categories-->
+                            <a class="badge bg-secondary text-decoration-none link-light" href="https://www.google.com/search?q=프탈레이트">프탈레이트</a>
+                            <a class="badge bg-secondary text-decoration-none link-light" href="https://mdtoday.co.kr/news/view/1065572467201488">위험성</a>
+                        </header>
+                        <!-- Preview image figure-->
+                        <figure class="mb-4"><img class="img-fluid rounded" src="../static/TRKO201600010578_107_image_1.png" alt="..." /></figure>
+                        <!-- Post content-->
+                        <section class="mb-5">
+                            <p class="fs-5 mb-4">Science is an enterprise that should be cherished as an activity of the free human mind. Because it transforms who we are, how we live, and it gives us an understanding of our place in the universe.</p>
+                            <p class="fs-5 mb-4">The universe is large and old, and the ingredients for life as we know it are everywhere, so there's no reason to think that Earth would be unique in that regard. Whether of not the life became intelligent is a different question, and we'll see if we find that.</p>
+                            <p class="fs-5 mb-4">If you get asteroids about a kilometer in size, those are large enough and carry enough energy into our system to disrupt transportation, communication, the food chains, and that can be a really bad day on Earth.</p>
+                            <h2 class="fw-bolder mb-4 mt-5">I have odd cosmic thoughts every day</h2>
+                            <p class="fs-5 mb-4">For me, the most fascinating interface is Twitter. I have odd cosmic thoughts every day and I realized I could hold them to myself or share them with people who might be interested.</p>
+                            <p class="fs-5 mb-4">Venus has a runaway greenhouse effect. I kind of want to know what happened there because we're twirling knobs here on Earth without knowing the consequences of it. Mars once had running water. It's bone dry today. Something bad happened there as well.</p>
+                        </section>
+                    </article>
+                    <!-- Comments section-->
+                    <section class="mb-5">
+                        <div class="card bg-light">
+                            <form class="mb-5" action="/post" method="post">
+                                <textarea class="form-control" name="comment" placeholder="댓글을 입력하세요"></textarea>
+                                <button class="btn btn-primary" type = "submit">작성</button>  
+                            </form>
+                            <h2>댓글목록</h2>
+                            <div class="card bg-dark">
+                                {% for comment in comments %}
+                                    <div class = "card bg-light">
+                                        <li>
+                                            익명의 사용자
+                                        </li>
+                                        {{ comment }}
+                                    </div>
+                                    <br>
+                                {% endfor %}
+                            </div>
+                        </div>
+                    </section>                  
+                </div>
+                <!-- Side widgets-->
+                <div class="col-lg-4">
+                    <!-- Categories widget-->
+                    <div class="card mb-4">
+                        <div class="card-header">주요 키워드</div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <ul class="list-unstyled mb-0">
+                                        <li><a href="https://www.google.com/search?q=프탈레이트">프탈레이트</a></li>
+                                        <li><a href="https://www.google.com/search?q=환경호르몬">환경호르몬</a></li>
+                                        <li><a href="https://www.google.com/search?q=당뇨병">당뇨병</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-sm-6">
+                                    <ul class="list-unstyled mb-0">
+                                        <li><a href="https://www.google.com/search?q=프탈레이트">JavaScript</a></li>
+                                        <li><a href="https://www.google.com/search?q=프탈레이트">CSS</a></li>
+                                        <li><a href="https://www.google.com/search?q=프탈레이트">Tutorials</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Side widget-->
+                    <div class="card mb-4">
+                        <div class="card-header">만든 사람</div>
+                        <div class="card-body">
+                            <figure class="mb-4"><img class="img-fluid rounded" src="../static/KakaoTalk_20231110_195739574.jpg" alt="..." /></figure></div>
+                        </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer-->
+        <footer class="py-5 bg-dark">
+            <div class="container"><p class="m-0 text-center text-white">Copyright &copy; BS company</p></div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="../static/scripts.js"></script>
+    </body>
+</html>
